@@ -35,11 +35,7 @@
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    
-    MKCoordinateRegion region;
-    region.center = userLocation.coordinate;
-    region.span = MKCoordinateSpanMake(0.005, 0.005);
-    self.testMapView.region = region;
+    self.testMapView.region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 100, 100);
 
 }
 
