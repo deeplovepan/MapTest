@@ -38,7 +38,7 @@
     
     MKCoordinateRegion region;
     region.center = userLocation.coordinate;
-    region.span = MKCoordinateSpanMake(0.001, 0.001);
+    region.span = MKCoordinateSpanMake(0.005, 0.005);
     self.testMapView.region = region;
 
 }
