@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController ()
+@interface ViewController () <MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *testMapView;
+
 
 @end
 
@@ -18,12 +22,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-}
+    
+   }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - MKMapViewDelegate
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    
+    MKCoordinateRegion region;
+    region.center = userLocation.coordinate;
+    region.span = MKCoordinateSpanMake(0.001, 0.001);
+    self.testMapView.region = region;
+
 }
 
 @end
