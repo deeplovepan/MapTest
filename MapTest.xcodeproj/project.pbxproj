@@ -24,6 +24,8 @@
 		A6CD28291726FEE9001A0DA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6CD28271726FEE9001A0DA7 /* InfoPlist.strings */; };
 		A6CD282C1726FEE9001A0DA7 /* MapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CD282B1726FEE9001A0DA7 /* MapTestTests.m */; };
 		A6CD283717270012001A0DA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CD28351726FFD1001A0DA7 /* MapKit.framework */; };
+		A6CD283A1728436A001A0DA7 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CD28391728436A001A0DA7 /* MyAnnotation.m */; };
+		A6CD283C17284513001A0DA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CD283B17284513001A0DA7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		A6CD282A1726FEE9001A0DA7 /* MapTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapTestTests.h; sourceTree = "<group>"; };
 		A6CD282B1726FEE9001A0DA7 /* MapTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTestTests.m; sourceTree = "<group>"; };
 		A6CD28351726FFD1001A0DA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A6CD28381728436A001A0DA7 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		A6CD28391728436A001A0DA7 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		A6CD283B17284513001A0DA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CD283C17284513001A0DA7 /* CoreLocation.framework in Frameworks */,
 				A6CD283717270012001A0DA7 /* MapKit.framework in Frameworks */,
 				A6CD27FB1726FEE9001A0DA7 /* UIKit.framework in Frameworks */,
 				A6CD27FD1726FEE9001A0DA7 /* Foundation.framework in Frameworks */,
@@ -90,6 +96,7 @@
 		A6CD27EE1726FEE9001A0DA7 = {
 			isa = PBXGroup;
 			children = (
+				A6CD283B17284513001A0DA7 /* CoreLocation.framework */,
 				A6CD28351726FFD1001A0DA7 /* MapKit.framework */,
 				A6CD28001726FEE9001A0DA7 /* MapTest */,
 				A6CD28241726FEE9001A0DA7 /* MapTestTests */,
@@ -126,6 +133,8 @@
 				A6CD28121726FEE9001A0DA7 /* MainStoryboard.storyboard */,
 				A6CD28151726FEE9001A0DA7 /* ViewController.h */,
 				A6CD28161726FEE9001A0DA7 /* ViewController.m */,
+				A6CD28381728436A001A0DA7 /* MyAnnotation.h */,
+				A6CD28391728436A001A0DA7 /* MyAnnotation.m */,
 				A6CD28011726FEE9001A0DA7 /* Supporting Files */,
 			);
 			path = MapTest;
@@ -277,6 +286,7 @@
 				A6CD28071726FEE9001A0DA7 /* main.m in Sources */,
 				A6CD280B1726FEE9001A0DA7 /* AppDelegate.m in Sources */,
 				A6CD28171726FEE9001A0DA7 /* ViewController.m in Sources */,
+				A6CD283A1728436A001A0DA7 /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
